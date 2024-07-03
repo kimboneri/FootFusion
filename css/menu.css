@@ -1,0 +1,117 @@
+.menu-desplegable{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 580px;
+    height: 100%;
+    background-color: black;
+    transition: right 0.5s ease-in-out;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    
+}
+.menu-desplegable-content img{
+    width: 60px;
+}
+.menu-cerrado {
+    right: -600px;
+}
+.menu-desplegable-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-desplegable-tarjeta {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color:#c4c4c457;
+    padding: 15px;
+    border-radius: 20px;
+    justify-content: start;
+    gap: 20px;
+}
+.menu-desplegable-tarjeta span {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.menu-desplegable-tarjeta .menu-img{
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+}
+
+.menu-desplegable-tarjeta .menu-img img{
+    width: 100%;
+}
+.menu-desplegable-tarjeta .menu-img span{
+   font-size: 35px;
+}
+
+.menu-desplegable-tarjeta .modelo-precio{
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+.menu-desplegable-tarjeta .modelo-precio img{
+    transform: translateX(150px);
+    padding-bottom: 10px;
+    width: 20px;
+    cursor: pointer;
+}
+.menu-desplegable-tarjeta .modelo-precio p{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 35px;
+}
+
+
+
+.menu-desplegable-tarjeta .cerrar:hover{
+    transform: scale(1.1);
+}
+.menu-desplegable-img {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 82px;
+}
+.menu-desplegable-img h2{
+   font-size: 25px;
+   padding-left: 80px;
+ 
+}
+.total-compra{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.total-compra span {
+    font-family: "Montserrat", sans-serif;
+    color: white ;
+}
+.total-compra button {
+    background-color: #dfd71a;
+    border-radius: 20px;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+
+#cerrar{
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+#cerrar:hover{
+    transform: scale(1.1);
+}

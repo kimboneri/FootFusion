@@ -1,32 +1,328 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>FootFusion</title>
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h1>FootFusion</h1>
-            <nav>
-               <ul>
-                <a href="">INICIO</a>
-                <a href="">HOMBRE</a>
-                <a href="">MUJER</a>
-                <a href="">BLOG</a>
-               </ul>
-            </nav>
-            <div class="box-buscador-lupita">
-                <div class="buscador">
-                    <img src="" alt="lupita">
+    <header class="container">
+        <h1>FootFusion</h1>
+        <nav class="header-nav">
+            <a href="index.html">INICIO</a>
+            <a href="hombre.html">HOMBRE</a>
+            <a href="mujer.html">MUJER</a>
+            <a href="kids.html">KIDS</a>
+            <a href="contactanos.html">CONTACTANOS</a>
+        </nav>
+        <div class="header-box">
+            <div class="buscador">
+                <img src="img/iconos/icons8-búsqueda-500 (1).png" alt="lupa" width="25px">
+                <input type="text" placeholder="Buscar">
+            </div>
+            <div class="carrito">
+                <img id="carrito" src="img/iconos/icons8-carrito-de-compras-64 (1).png" alt="carrito" width="30px">
+            </div>
+        </div>
+    </header>
+
+    <!-- BANNER  -->
+    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true"
+        space-between="30" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+        <swiper-slide><img src="img/portada/nike/zapatillas-ropa-y-accesorios-nike-para-hombre.png"
+                alt="banner-nike"></swiper-slide>
+        <swiper-slide><img src="img/portada/adidas/Sostenibilidad_MN_tcm217_923888_74da7b2c2a.jfif"
+                alt="banner-adidas"></swiper-slide>
+        <swiper-slide><img src="img/portada/puma/cover-banner-puma-brand.jpg" alt="puma"></swiper-slide>
+        <swiper-slide><img src="img/portada/nike/d6e7a96e2c7e94a38ba5913742291375.jpg" alt="nike"></swiper-slide>
+        <swiper-slide><img
+                src="img/portada/adidas/c27bdf1b-9b27-431f-9663-685614333136.__CR0,0,1464,600_PT0_SX1464_V1___.jfif"
+                alt="banner-adidas"></swiper-slide>
+        <swiper-slide><img
+                src="img/portada/jordan/xair-jordan-4-red-cement-kay-banner-1.jpg.pagespeed.ic.rCf2mcV9_6.jpg"
+                alt="banner-jordan"></swiper-slide>
+    </swiper-container>
+    <main class="container">
+
+        <!-- MARCAS -->
+
+        <section class="marcas ">
+            <div class="marca">
+                <img src="img/iconos/icons8-air-jordan-100 (1).png" alt="jordan">
+            </div>
+            <div class="marca">
+                <img src="img/iconos/icons8-puma-a-german-multinational-company---designs-and-manufactures-athletic-and-casual-footwear,-apparel-and-accessories-96 (2).png"
+                    alt="puma">
+            </div>
+            <div class="marca">
+                <img src="img/iconos/icons8-adidas-trébol-filled-100 (1).png" alt="adidas">
+            </div>
+            <div class="marca">
+                <img src="img/iconos/icons8-nike-100 (1).png" alt="nike">
+            </div>
+        </section>
+
+        <!-- TENDENCIA DE INVIERNO -->
+
+        <section>
+            <h2>TENDENCIA DE INVIERNO</h2>
+            <div class="tendenciaInvierno-content">
+
+                <div class="box-img">
+                    <img src="img/tendencia-invierno/nike/ae96c379a248d8583952835fb912502a.jpg" alt="nike">
                 </div>
-                <div class="carrito">
-                    <img src="" alt="carrito">
+                <div class="box-img">
+                    <img src="img/tendencia-invierno/adidas/208d9c8b290c239695ffbb785bb0a886.jpg" alt="adidas">
+                </div>
+                <div class="box-img">
+                    <img src="img/tendencia-invierno/jordan/d4480b4ca84540a2be235e6f4f6fe1cb.webp" alt="jordan">
+                </div>
+                <div class="box-img">
+                    <img src="img/tendencia-invierno/puma/b1772c9f2a47564b9a708db7692eae29.jpg" alt="puma">
+                </div>
+            </div>
+        </section>
+
+        <!-- CLASICAS -->
+
+        <section>
+
+            <h2>CLASICAS</h2>
+
+            <div class="button-marcas">
+                <button id="adidas">Adidas</button>
+                <button id="puma">Puma</button>
+                <button id="nike">Nike</button>
+                <button id="jordan">Jordan</button>
+            </div>
+            <div id="clasicas-content">
+                <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true"
+                    slides-per-view="3" space-between="30">
+                    <swiper-slide class="slide2"><img src="img/clasicas/adidas/img01 (4)-Photoroom.png"
+                            alt="adidas"></swiper-slide>
+                    <swiper-slide class="slide2"><img src="img/clasicas/jordan/img01 (5)-Photoroom.png"
+                            alt="jordan"></swiper-slide>
+                    <swiper-slide class="slide2"><img src="img/clasicas/nike/img01 (6)-Photoroom.png"
+                            alt="nike"></swiper-slide>
+                    <swiper-slide class="slide2"><img
+                            src="img/clasicas/puma/Puma-RS-Z-Outline-Outline-White-Blue-Red-Photoroom.png"
+                            alt="puma"></swiper-slide>
+                    <swiper-slide class="slide2"><img
+                            src="img/clasicas/adidas/adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow-Product-Photoroom.png"
+                            alt="adidas"></swiper-slide>
+                    <swiper-slide class="slide2"><img src="img/clasicas/jordan/img01 (7)-Photoroom.png"
+                            alt="jordan"></swiper-slide>
+                    <swiper-slide class="slide2"><img src="img/clasicas/nike/img01 (8)-Photoroom.png"
+                            alt="nike"></swiper-slide>
+                    <swiper-slide class="slide2"><img
+                            src="img/clasicas/puma/Puma-Future-Rider-Twofold-Black-White-Photoroom.png"
+                            alt="puma"></swiper-slide>
+
+                </swiper-container>
+
+                <!-- slide clasica -->
+                
+
+            </div>
+
+        </section>
+
+        <!-- ESTILO PARA TODOS -->
+
+        <section>
+            <h2>ESTILO PARA TODOS</h2>
+            <div class="generos-content">
+                <a href="mujer.html">
+                    <div class="capa">
+                        <h3>MUJER</h3>
+                        <video autoplay loop muted>
+                            <source src="videos/adidas/adidaspe.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </a>
+                <a href="hombre.html">
+                    <div class="capa">
+                        <h3>HOMBRE</h3>
+                        <video autoplay loop muted>
+                            <source src="videos/nike/nikesb.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </a>
+                <a href="kids.html">
+                    <div class="capa">
+                        <h3>KIDS</h3>
+                        <video autoplay loop muted>
+                            <source src="videos/jordan/jumpman23.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- COLABORACIONES -->
+
+        <section>
+            <h2>COLABORACIONES</h2>
+            <div class="button-marcas">
+                <button id="adidas1">Adidas</button>
+                <button id="puma1">Puma</button>
+                <button id="nike1">Nike</button>
+                <button id="jordan1">Jordan</button>
+            </div>
+            <div id="colaboraciones-content">
+                <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true"
+                    slides-per-view="3" space-between="30">
+                    <swiper-slide class="slide2"><img src="img/colaboraciones/adidas/img01-Photoroom.png"
+                            alt="adidas-Forum-Bad-Bunny"></swiper-slide>
+                    <swiper-slide class="slide2"><img
+                            src="img/colaboraciones/jordan/dior-x-air-jordan-1-high-dior-SNEAKERS-1-removebg-preview.png"
+                            alt="jordan-dior"></swiper-slide>
+                    <swiper-slide class="slide2"><img src="img/colaboraciones/jordan/img01 (1)-Photoroom.png"
+                            alt="jordan-Off-white"></swiper-slide>
+                    <swiper-slide class="slide2"><img src="img/colaboraciones/adidas/img01 (2)-Photoroom.png"
+                            alt="adidas-frezer"></swiper-slide>
+                    <swiper-slide class="slide2"><img src="img/colaboraciones/pumas/img01 (3)-Photoroom.png"
+                            alt="pumas-mario-bros"></swiper-slide>
+                    <!-- /*slide adidas*/ -->
+                    <swiper-slide class="slide2"><img src="img/colaboraciones/nike/img01-_44_-Photoroom.png"
+                            alt="nike"></swiper-slide>
+                    <swiper-slide class="slide2"><img
+                            src="img/colaboraciones/nike/Nike-Air-Yeezy-2-NRG-Pure-Platinum-Product-Photoroom.png"
+                            alt="nike"></swiper-slide>
+                    <swiper-slide class="slide2"><img
+                            src="img/colaboraciones/nike/tenis Air Force 1 de Nike x Louis Vuitton.png"
+                            alt="nike"></swiper-slide>
+                    <swiper-slide class="slide2"><img src="img/colaboraciones/nike/VaporWaffle de Nike x Sacai.png"
+                            alt="nike"></swiper-slide>
+                    <swiper-slide class="slide2"><img
+                            src="img/colaboraciones/nike/Zapatillas para juniors PUMA x PLAYSTATION.png"></swiper-slide>
+
+                </swiper-container>
+            </div>
+
+
+        </section>
+
+        <!-- BLOG -->
+
+        <section>
+            <h2>BLOG</h2>
+            <div class="blog-content">
+                <article>
+                    <img src="img/blog/3d90217f35355609287b462e124d5af0.png" alt="error de imagen">
+                    <p>Para mantener tus zapatillas limpias y en buen estado, realiza una limpieza regular con un
+                        cepillo
+                        suave o un paño húmedo, utilizando detergente suave para evitar dañar los materiales. Cepilla
+                        las
+                        suelas con un cepillo de dientes viejo y aplica limpiadores específicos según el material
+                        (cuero,
+                        tela, malla). Lava los cordones por separado y deja secar las zapatillas al aire libre, evitando
+                        la
+                        luz solar directa. Rellena con papel de periódico para mantener la forma y desodoriza con
+                        bicarbonato de sodio dejándolo actuar durante la noche.</p>
+                </article>
+                <article>
+                    <img src="img/blog/6f86e71cd7131f3a8af01aed3005d87b.jpg" alt="error de imagen">
+                    <p>En FootFusion, organizamos emocionantes eventos de descuentos en zapatillas de marcas líderes
+                        como
+                        Nike, Adidas, Puma y Jordan. Estos eventos ofrecen increíbles oportunidades para adquirir tus
+                        modelos favoritos a precios reducidos. Te invitamos a seguirnos en nuestras redes sociales para
+                        estar al tanto de las próximas promociones y no perderte ninguna de estas ofertas exclusivas.
+                        Mantente conectado con nosotros para aprovechar al máximo los descuentos y llevarte las mejores
+                        zapatillas al mejor precio. ¡No te lo pierdas!</p>
+                </article>
+                <article>
+                    <img src="img/blog/438281f1f6bbb9a3574f06a7a2e45243.jpg" alt="error de imagen">
+                    <p>En FootFusion, somos los número uno en stock de zapatillas de las marcas más icónicas como Nike,
+                        Jordan, Adidas y Puma. Nuestro compromiso con la excelencia nos permite ofrecer una amplia
+                        variedad
+                        de modelos y tallas para satisfacer todos los gustos y necesidades. Además, contamos con el
+                        mejor
+                        equipo logístico, asegurando que tus zapatillas lleguen rápidamente a tu destino. Con nosotros,
+                        puedes confiar en una experiencia de compra inigualable, desde la selección hasta la entrega
+                        final.
+                        ¡Descubre la diferencia de comprar en FootFusion!</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- CIERRRE -->
+
+    <footer class="container">
+        <h2 class="footer-subtitulo">FootFusion</h2>
+        <div class="footer-content ">
+            <div class="siguenos">
+                <h3>Siguenos</h3>
+                <div class="siguenos-content">
+                    <a href="#"><img src="img/redes/icons8-twitterx-96.png" alt="x"></a>
+                    <a href="#"><img src="img/redes/icons8-instagram-96.png" alt="instagram"></a>
+                    <a href="#"><img src="img/redes/icons8-whatsapp-96.png" alt="whatsapp"></a>
+                    <a href="#"><img src="img/redes/icons8-facebook-nuevo-96.png" alt="facebook"></a>
+                </div>
+            </div>
+            <div class="informacion">
+                <h3>Informacion de la pagina</h3>
+                <div class="informacion-content">
+                    <a href="#">Acerca de FootFusion</a>
+                    <a href="#">Herramientas</a>
+                    <a href="#">Trabaje con nosotros</a>
+                </div>
+            </div>
+            <div class="deportes">
+                <h3>Deportes</h3>
+                <div class="deportes-content">
+                    <a href="#">Running</a>
+                    <a href="#">Basquet</a>
+                    <a href="#">Urbano</a>
+                </div>
+            </div>
+            <div class="ayuda">
+                <h3>Ayuda</h3>
+                <div class="ayuda-content">
+                    <a href="#">Pagos</a>
+                    <a href="#">Envios</a>
+                    <a href="#">Devoluciones</a>
+
                 </div>
             </div>
         </div>
-       
-    </header>
+        <div class="footer-libroReclamaciones">
+            <img src="img/redes/LIBRO-DE-RECLAMACIONES.jpg" alt="libro de reclamacion">
+        </div>
+
+        <p class="copyright">Derechos reservado &copy; 2024 - FootFusion</p>
+    </footer>
+
+    <div id="dropdown" class="menu-cerrado menu-desplegable">
+        <div class="menu-desplegable-img ">
+            <img id="cerrar" src="img/iconos/icons8-x-100 (3).png" alt="cerrar" width="30px">
+            <h2>Carrito de Compras</h2>
+        </div>
+        <div class="menu-desplegable-content ">
+            <img src="img/iconos/icons8-carrito-de-compras-64 (1).png" alt="">
+            <p>El carrito esta vacio</p>
+
+        </div>
+        <div class="total-compra">
+            <span>Total: $</span>
+            <button>Comprar</button>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/clasicas.js"></script>
+    <script src="js/colaboraciones.js"></script>
+
+
+
 </body>
+
 </html>

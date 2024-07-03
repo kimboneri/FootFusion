@@ -1,0 +1,50 @@
+/*PRODUCTOS*/
+
+
+.zapatillas-contenido {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+.tarjeta-zapatillas {
+  text-align: center;
+  background-color: #48464686;
+  border-radius: 20px;
+  padding-bottom: 10px;
+}
+.tarjeta-zapatillas .box-img {
+  width: 400px;
+  height: 300px;
+}
+.tarjeta-zapatillas img {
+  width: 100%;
+}
+.tarjeta-zapatillas span {
+  display: block;
+  color: white;
+  padding: 5px 0;
+}
+.tarjeta-zapatillas button {
+  background-color: #dfd71a;
+  border: none;
+  border-radius: 20px;
+  padding: 6px;
+  cursor: pointer;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+.tarjeta-zapatillas button:hover {
+  transform: scale(1.1);
+}
+
+/*ENVIOS*/
+
+.envios {
+  display: flex;
+  justify-content: space-between;
+}
+.envios .box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

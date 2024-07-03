@@ -1,0 +1,55 @@
+/*FILTROS*/
+.filtros-contenido{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 20px;
+    overflow:hidden ;
+  }
+  .filtros-contenido .buttonFiltros{
+    border: none;
+    color: #7a7878;
+    background-color: transparent;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: black;
+    width: 150px;
+    z-index: 2;
+  }
+  .abrirFiltros{
+    position: absolute;
+    transform: translateX(-600px);
+    display: flex;
+    justify-content: start;
+    gap: 50px;
+    color: white;
+    list-style: none;
+    transition: all 0.9s ease;
+    z-index: 1;
+   
+  }
+  .cerrarFiltros{
+    transform: translateX(200px);
+  }
+  
+  .filtros-contenido .abrirFiltros li{
+    font-family: "Bebas Neue", sans-serif;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    width: 100px;
+    height: 25px;
+    justify-content: center;
+    color: black;
+    cursor: pointer;
+    background-color: #dfd71a;
+    border-radius: 20px;
+   
+  }
+  
+  .filtros-contenido button:hover {
+    transform: scale(1.1);
+  }
+  
